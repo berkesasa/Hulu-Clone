@@ -4,11 +4,10 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 function Nav() {
 
-  const searchParams = useSearchParams();
   // const genre = searchParams.get('genre');
   // const url = requests[genre].url
-
   // const deneme = requests[genre].url
+  const searchParams = useSearchParams();
   const router = useRouter();
 
   return (

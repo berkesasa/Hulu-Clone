@@ -9,8 +9,10 @@ export default async function Page({ searchParams }) {
   //  const request = await fetch(`https://api.themoviedb.org/3/${searchParams.genre ? "movie/" + searchParams.genre : "trending/all/day"}`, {next: { revalidate: 10000}})
   // const genre = searchParams.get('genre');
   // const url = requests[genre].url
-  const url = searchParams.genre
-  const getUrl = requests[url].url
+  const urlName = searchParams.genre
+  const getUrl = requests[urlName].url
+
+
 
   const request = await fetch(`https://api.themoviedb.org/3${getUrl}`
   ).then((res) => res.json());
