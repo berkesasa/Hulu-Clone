@@ -5,10 +5,11 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 
 function Thumbnail({ dt }) {
     // console.log(dt);
+    console.log(dt);
     return (
         <div className="p-2 transition duration-200 ease-in transfrom sm:hover:scale-105 hover:z-50 cursor-pointer group">
             <Image
-                layout="responsive"
+                // layout="responsive"
                 width={1080}
                 height={1920}
                 src={`https://image.tmdb.org/t/p/original/${dt.backdrop_path || dt.poster_path} `} />
