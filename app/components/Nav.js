@@ -3,6 +3,7 @@ import requests from "../utils/requests";
 import { useRouter, useSearchParams } from "next/navigation";
 
 function Nav() {
+  
 
   // const genre = searchParams.get('genre');
   // const url = requests[genre].url
