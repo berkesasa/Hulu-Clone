@@ -4,16 +4,14 @@ import Image from "next/image";
 import { ThumbUpIcon } from "@heroicons/react/outline";
 
 function Thumbnail({ dt }) {
-    console.log(dt);
-    console.log(dt);
     return (
         <div className="p-2 transition duration-200 ease-in transfrom sm:hover:scale-105 hover:z-50 cursor-pointer group">
             <Image
-                // layout="responsive"
+                layout="responsive"
                 alt="Thumbnail Image"
                 width={1080}
                 height={1920}
-                src={`https://image.tmdb.org/t/p/original/${encodeURIComponent(dt?.backdrop_path || dt?.poster_path)}`}/>
+                src={`https://image.tmdb.org/t/p/original/${(dt.backdrop_path || dt.poster_path).trim()}`}/>
             <div className="p-2">
                 <p className="max-w-md truncate">{dt.overview}</p>
 
