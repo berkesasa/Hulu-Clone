@@ -4,10 +4,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 function Nav() {
   
-
-  // const genre = searchParams.get('genre');
-  // const url = requests[genre].url
-  // const deneme = requests[genre].url
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -24,10 +20,6 @@ function Nav() {
 
         ))
         }
-        {/* // requests.map((tab, i) => (
-          //   <Link key={i} className={`cursor-pointer transition duration-100 transfrom hover:scale-125 hover:text-white active:text-red-500 last:pr-24  `} href={`/?genre=${tab.url}`}>{tab.title}</Link>
-          // )) */}
-
       </div>
       <div className="absolute top-0 right-0 bg-gradient-to-l from-[#06202A] h-10 w-1/12" />
     </nav>

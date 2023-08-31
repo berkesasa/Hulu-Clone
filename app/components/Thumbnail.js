@@ -1,21 +1,24 @@
-
-// "use client"
+"use client"
 import Image from "next/image";
 import { ThumbUpIcon } from "@heroicons/react/outline";
 
 function Thumbnail({ dt }) {
 
-    const originalUrl = `https://image.tmdb.org/t/p/original/${dt.backdrop_path || dt.poster_path}`;
-    const cleanUrl = originalUrl.replace(/%20/g, "");
+    // const originalUrl = `https://image.tmdb.org/t/p/original/${dt.backdrop_path || dt.poster_path}`;
+    // const cleanUrl = originalUrl.replace(/%20/g, "");
+
+    const imageLoader = ({ src, width, quality }) => {
+        return `https://image.tmdb.org/t/p/original/${src}?w=${width}&q=${quality || 75}`
+    }
 
     return (
         <div className="p-2 transition duration-200 ease-in transfrom sm:hover:scale-105 hover:z-50 cursor-pointer group">
             <Image
-
+                loader={imageLoader}
                 alt="Thumbnail Image"
                 width={1080}
                 height={1920}
-                src={cleanUrl} />
+                src={`${dt.backdrop_path || dt.poster_path}`} />
             <div className="p-2">
                 <p className="max-w-md truncate">{dt.overview}</p>
 
