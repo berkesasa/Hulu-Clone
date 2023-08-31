@@ -4,9 +4,6 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 
 function Thumbnail({ dt }) {
 
-    // const originalUrl = `https://image.tmdb.org/t/p/original/${dt.backdrop_path || dt.poster_path}`;
-    // const cleanUrl = originalUrl.replace(/%20/g, "");
-
     const imageLoader = ({ src, width, quality }) => {
         return `https://image.tmdb.org/t/p/original/${src}?w=${width}&q=${quality || 75}`
     }
