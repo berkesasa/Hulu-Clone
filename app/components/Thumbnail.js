@@ -7,11 +7,11 @@ function Thumbnail({ dt }) {
     return (
         <div className="p-2 transition duration-200 ease-in transfrom sm:hover:scale-105 hover:z-50 cursor-pointer group">
             <Image
-                layout="responsive"
+                
                 alt="Thumbnail Image"
                 width={1080}
                 height={1920}
-                src={`https://image.tmdb.org/t/p/original/${(dt.backdrop_path || dt.poster_path).trim()}`}/>
+                src={`https://image.tmdb.org/t/p/original/${dt.backdrop_path}`}/>
             <div className="p-2">
                 <p className="max-w-md truncate">{dt.overview}</p>
 
