@@ -15,7 +15,7 @@ function Thumbnail({ dt }) {
                 alt="Thumbnail Image"
                 width={1080}
                 height={1920}
-                src={`https://image.tmdb.org/t/p/original/${cleanUrl}`} />
+                src={cleanUrl} />
             <div className="p-2">
                 <p className="max-w-md truncate">{dt.overview}</p>
 
