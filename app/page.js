@@ -9,7 +9,6 @@ export default async function Page({ searchParams }) {
 
   const getUrl = requests[searchParams.genre]  != null ? requests[searchParams.genre].url : `/trending/all/week?api_key=${API_KEY}&language=en-US`;
 
-
   const request = await fetch(`https://api.themoviedb.org/3${getUrl}`
   ).then((res) => res.json());
 
