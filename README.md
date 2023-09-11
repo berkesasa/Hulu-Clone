@@ -3,6 +3,7 @@
 
 
 This project is a Hulu-like web application built using Tailwind CSS, React, and Next.js. The project allows you to watch movies and TV shows online.
+If you want to look at the project live: [Live Project](https://hulu-clone-berkesasa.vercel.app/)
 
 
 ## Table of Contents
