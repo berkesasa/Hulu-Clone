@@ -51,7 +51,7 @@ This project provides a simple interface to list movies and TV shows. Users can 
 
 ## Screenshots
 
-![Desktop Image](./app/screenshots/screenshot-desktop.png) | ![Mobile Image](./app/screenshots/screenshot-mobile.png)
+![Desktop Image](./app/screenshots/screenshot-desktop.png) ![Mobile Image](./app/screenshots/screenshot-mobile.png)
 ## Technologies
 
 This project uses the following technologies:
